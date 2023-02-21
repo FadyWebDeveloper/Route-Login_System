@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body class="bg-light ">
+  <div class="container  mt-5 py-5 signIn d-none" id="in">
+    <div class="w-75 mx-auto bg-light p-5 shadow-lg">
+      <h2 class="text-center  mb-5">Smart Login System</h2>
+      <input type="email" placeholder="Enter Your Email" class="form-control mb-3" id="loginMaill">
+      <p class="alert alert-danger text-black w-75 fw-semibold text-center mx-auto  d-none " id="log"> Write A valid mail as test@gmail.com </p>
+      <input type="password" placeholder="Enter Your password" class="form-control mb-5" id="loginPasw">
+      <p class="alert alert-danger text-black fw-semibold fs-5 w-75 mx-auto text-center d-none" id="req">incorrect email or password</p>
+      <a class="btn  btn-outline-primary w-100 mb-3">Login</a>
+      <p class="text-center">Don’t have an account? <a class="go-signup" href="#up">Sign Up</a></p>
+    </div>
+
+  </div>
+
+  <div class="container  mt-5 py-5 d-block" id="up">
+    <div class="w-75 mx-auto bg-light p-5 shadow-lg signUp">
+      <h2 class="text-center mb-5">Smart Login System</h2>
+      <form action="">
+      <input type="text" placeholder="Enter Your name" class="form-control mb-3" id="singUpNam">
+      <input type="email" placeholder="Enter Your Email" class="form-control mb-3" id="singUpMaill">
+      <p class="alert alert-danger text-black w-75 fw-semibold text-center mx-auto  d-none " id="valid"> Write A valid mail as test@gmail.com </p>
+      <input type="password" placeholder="Enter Your password" class="form-control mb-3" id="singUpPasss">
+      <p class="alert alert-success w-75 fw-semibold text-center mx-auto suc d-none">Success Sign Up- Can SignIn Now</p>
+      <p class="alert alert-danger w-75 fw-semibold text-center mx-auto fail d-none">All inputs is required </p>
+      <p class="alert alert-danger w-50 fw-semibold text-center mx-auto exit d-none">Email already exists </p>
+      <a class="btn  btn-outline-primary w-100 mb-3" >Sign Up</a>
+      <p class="text-center go-login">You have an account? <a href="#in">Sign In</a></p>
+    </form>
+    </div>
+
+  </div>
+  <div class="home vh-100 py-5 d-none " id="home">
+    <nav class=" navbar mb-5 container  bg-light shadow-lg justify-content-between px-5 py-3">
+      <a href="#" class="nav-link nav-item fw-semibold fs-5">SMART LOGIN</a>
+      <a class="btn btn-outline-danger out-btn ">Log Out</a>
+    </nav>
+    <div class="container py-5  d-flex justify-content-center align-items-center">
+      <div class="w-50 h-50 py-5 mt-5 text-bg-success shadow-sm d-flex justify-content-center align-items-center fs-2 fw-semibold text">
+        WELCOME 
+      </div>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
